@@ -1,25 +1,42 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   ThemeData light() => ThemeData(
-          textTheme: TextTheme(
-        headline1: GoogleFonts.poppins(
-          fontSize: 50.0,
-          fontWeight: FontWeight.w400,
+          textTheme: const TextTheme(
+        headline1: TextStyle(
+            fontSize: 50.0,
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+            fontFamily: 'Poppins'),
+        headline2: TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.w500,
+            color: Colors.black,
+            fontFamily: 'Poppins'),
+        bodyText1: TextStyle(
+          fontSize: 20.0,
           color: Colors.black,
+          fontFamily: 'Poppins',
         ),
-        headline2: GoogleFonts.poppins(
-            fontSize: 20.0, fontWeight: FontWeight.w500, color: Colors.black),
-        bodyText1: GoogleFonts.poppins(fontSize: 20.0, color: Colors.black),
       ));
 
   ThemeData dark() => ThemeData.dark().copyWith(
-          textTheme: TextTheme(
-        headline1: GoogleFonts.poppins(
-            fontSize: 50.0, fontWeight: FontWeight.w400, color: Colors.white),
-        headline2: GoogleFonts.poppins(
-            fontSize: 20.0, fontWeight: FontWeight.w500, color: Colors.white),
-        bodyText1: GoogleFonts.poppins(fontSize: 20.0, color: Colors.white),
-      ));
+        textTheme: const TextTheme(
+          headline1: TextStyle(
+              fontSize: 50.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontFamily: 'Poppins'),
+          headline2: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.w500,
+              color: Colors.white,
+              fontFamily: 'Poppins'),
+          bodyText1: TextStyle(
+            fontSize: 20.0,
+            color: Colors.white,
+            fontFamily: 'Poppins',
+          ),
+        ),
+      );
 }

@@ -18,11 +18,11 @@ class Task {
     );
   }
 
-  static String encode(List<Task> tasks) => json.encode(
-      tasks.map<Map<String, dynamic>>((task) => Task.toMap(task)).toList());
+  static String encode(List<Task> tasks) =>
+      json.encode(tasks.map((task) => Task.toMap(task)).toList());
 
   static List<Task> decode(String? tasks) =>
       (json.decode(tasks!) as List<dynamic>)
-          .map<Task>((json) => Task.fromJson(json))
+          .map<Task>((task) => Task.fromJson(task))
           .toList();
 }
