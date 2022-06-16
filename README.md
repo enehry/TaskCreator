@@ -1,6 +1,6 @@
 # TASK CREATOR
 
-Introduction to Flutter URSB Webinar
+Introduction to Flutter University of Rizal System Webinar
 
 ## Topics
 
